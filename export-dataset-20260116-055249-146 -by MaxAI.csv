@@ -1,0 +1,2001 @@
+"id";"title";"slug";"acronym";"url";"organization";"organization_id";"owner";"owner_id";"description";"description_short";"frequency";"license";"temporal_coverage.start";"temporal_coverage.end";"spatial.granularity";"spatial.zones";"featured";"created_at";"last_modified";"tags";"archived";"resources_count";"main_resources_count";"resources_formats";"harvest.backend";"harvest.domain";"harvest.created_at";"harvest.modified_at";"harvest.remote_url";"quality_score";"metric.discussions";"metric.discussions_open";"metric.reuses";"metric.reuses_by_months";"metric.dataservices";"metric.followers";"metric.followers_by_months";"metric.views";"metric.resources_downloads"
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> </span><span lang=""EN-US""><extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:09.987000";"2026-01-16T00:00:13.546000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2456;317
+"5fa5e38997c665486bcbdd7c";"Idéo-Actions de formation-Ile-de-France";"ideo-actions-de-formation-ile-de-france";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-ile-de-france";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu :** les **actions de formation initiale** ainsi définies référencées par l’Onisep pour la **région Ile-de-France** et proposées principalement **sous statut scolaire ou étudiant.**
+**.**
+Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+ **Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"Île-de-France";False;"2020-11-07T01:00:09.830000";"2026-01-16T00:00:12.182000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2824;347
+"5fa5e38978ad06b169de1e1d";"Idéo-Métiers Onisep";"ideo-metiers-onisep";"";"https://www.data.gouv.fr/datasets/ideo-metiers-onisep";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Ce jeu de données présente le **référentiel métiers Onisep** (plus de 1000 métiers), et liste les[ **guides et collections imprimées**](https://librairie.onisep.fr/) de l’Onisep qui les décrivent.
+Il fait également le **lien** avec les **nomenclatures Rome** (Répertoire opérationnel des métiers et des emplois) et **GFE** (groupes formation emploi) permettant ainsi des croisements avec d'autres jeux d’opérateurs publics comme France Travail ou les collectivités territoriales.
+Depuis juin 2020, il présente aussi une correspondance (indexations) avec la **nomenclature** Onisep des **domaines et sous-domaines(\*)** (voir le jeu [ONISEP - IDÉO-NOMENCLATURE ONISEP DOMAINES ET SOUS DOMAINES (LICENCE ODBL)](http://opendata.onisep.fr/data/5fa58d750a60c/2-ideo-nomenclature-onisep-domaines-et-sous-domaines.htm)
+**Champs du jeu de données :**
+- libellé du métier ;
+- url de redirection / lien vers la fiche métier sur le site [Onisep.fr](http://www.onisep.fr/), qui comprend aussi l'identifiant unique du métier dans le référentiel Onisep;
+- publication papier existante (nom de la publication, collection, année, Gencod (code ISBN-EAN 13). NB : une ligne par publication pertinente ;
+- code et libellé GFE ;
+- code(s) ROME, V.3 (niveau 3) ; libellé(s) ROME ; lien(s) vers le ROME sur le site de France Travail ;
+- indexations par domaine/sous-domaine de la nomenclature Onisep.
+**Pour quels usages ?** Accompagnement des outils et des activités pédagogiques de découverte des métiers (numériques, visites et stages en entreprises, bilans de compétences…), par exemple.
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.
+<sup>**(\*)**</sup> Par ""**domaines**"" on entend préciser les types de compétences, de pratiques et d’interactions induits par les métiers ou fonctions de personnes en poste.
+Pour décrire les activités des entreprises ou organisations qui recrutent sur certains métiers, en fonction des types de produits ou services finaux réalisés, ou de leurs marchés ou publics cibles, on parlera plutôt de « **secteurs d'activité**».
+Ex : le métier de « comptable » permet d’exercer des fonctions du domaine : « gestion des entreprises, comptabilité/comptabilité », mais on le retrouvera dans des organisations aux secteurs d’activités très divers, par exemple : ""Agriculture"", ""Banque – Assurances"", ""Industries""… On le dira qualifiera d’ailleurs de métier « transverse ».
+L'**indexation** des métiers par **secteurs d'activités** n'est pas diffusée sur ce jeu. Elle est proposée sur le jeu xml : **[Idéo-Fiches métiers ](https://opendata.onisep.fr/data/5fe0808a2da6f/2-ideo-fiches-metiers.htm)**";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:09.527000";"2026-01-16T00:00:11.608000";"";False;5;0;"xml,xlsx,csv,ods,json";"";"";"";"";"";"0.78";1;0;2;"{'2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0, '2025-09': 0, '2025-10': 0, '2025-11': 0, '2025-12': 0}";0;3;"{'2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0, '2025-09': 0, '2025-10': 0, '2025-11': 0}";9993;1741
+"5fa5e3897fce339d438b652e";"Idéo-Structures d'enseignement secondaire";"ideo-structures-denseignement-secondaire";"";"https://www.data.gouv.fr/datasets/ideo-structures-denseignement-secondaire";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"_>>> Avertissement du 16/09/2025 : la colonne ""label génération 2024"" a été supprimée. Pour des données officielles sur ce label, consulter : https://www.enseignementsup-recherche.gouv.fr/fr/generation2024 et <https://data.education.gouv.fr/explore/dataset/fr-en-etablissements-labellises-generation-2024> <<<_
+**Périmètre du jeu :** Ce jeu est un **répertoire des établissements proposant un enseignement secondaire** référencés par L'Onisep. Les types d'établissements présents dans ce jeu de données sont les collèges, les lycées, les CFA (centres de formation d'apprenti-e-s), les structures de scolarisation de l'enseignement adapté (SEGPA, EREA) et du secteur médicosocial...
+**Champs de ce jeu :**
+- Code UAI (unité administrative immatriculée),
+- n° SIRET, type d'établissement,
+- nom de l'établissement,
+- sigle,
+- statut (public, privé...),
+- tutelle (ministères, chambres consulaires...),
+- université de rattachement (libellé et lien direct vers la fiche onisep.fr avec identifiant unique Onisep),
+- établissements liés (libellés et liens d'accès direct vers la fiche Onisep.fr avec identifiants uniques Onisep)
+- coordonnées géographiques (boîte postale, adresse postale, code postal, commune, identifiant commune, mention cedex, n° de téléphone, arrondissement, département, académie, région, identidiant région, longitude X, latitude Y),
+- journées portes ouvertes
+- langues enseignées dans l’établissement
+- lien d'accès direct vers la fiche onisep.fr avec identifiant unique Onisep.
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:09.390000";"2026-01-16T00:00:11.300000";"";False;7;0;"xml,xlsx,csv,geojson,ods,zip,json";"";"";"";"";"";"0.78";0;0;2;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;1;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";6440;1418
+"5fa5e389aafc7b48e11d25e8";"Idéo-Unités localisées d'inclusion scolaire (ULIS) de l'enseignement secondaire";"ideo-unites-localisees-dinclusion-scolaire-ulis-de-lenseignement-secondaire";"";"https://www.data.gouv.fr/datasets/ideo-unites-localisees-dinclusion-scolaire-ulis-de-lenseignement-secondaire";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Implantées en établissement secondaire, les **Ulis** **(unités localisées pour l’inclusion scolaire)** constituent une des modalités de mise en œuvre de l’inclusion scolaire des élèves présentant des :
+- Troubles des fonctions cognitives ou mentales
+- Troubles spécifiques du langage et des apprentissages
+- Troubles du neurodéveloppement (dont TSA)
+- Troubles de la fonction auditive
+- Troubles des fonctions motrices
+- Troubles de la fonction visuelle
+- Troubles multiples associés
+Le périmètre du jeu est restreint aux **Ulis de l’enseignement secondaire** : c'est à dire aux **collèges et lycées** qui permettent la **scolarisation** d’élèves en situation de handicap. Il ne décrit pas la totalité des Ulis en France.
+Pour plus d'information, consulter aussi la [rubrique ""Inclusion et handicap"" du site onisep.fr.](https://www.onisep.fr/inclusion-et-handicap)
+Attention, depuis la [Circulaire n° 2015-129 du 21-8-2015](https://www.education.gouv.fr/bo/15/Hebdo31/MENE1504950C.htm), **aucune Ulis n’est officiellement ou administrativement typée par handicap.** Chaque Ulis peut s’adapter chaque année aux demandes concrètes sur le terrain et peut accueillir différents types de handicaps en fonction des besoins.
+Les données figurant dans la **colonne « type handicap indicatif »** du jeu correspondent donc tout au plus à une **indication facultative, à valeur temporaire**, émanant de l’établissement, sur les principaux types de publics accueillis au moment où il communique avec les responsables de données Onisep.
+**Champs du jeu de données :** code UAI (unité administrative immatriculée), n° SIRET, type d’établissement (collège ou lycée), nom de l’établissement, type de handicap indicatif, adresse postale, code postal, commune, identifiant commune, département, région, identifiant région, coordonnées géographiques pour la géolocalisation (longitude et latitude), URL et ID Onisep.
+**Pour quels usages ?** Faciliter l’insertion des jeunes en situation de handicap grâce à la diffusion de l’offre de formation et d’accompagnement, ainsi que des coordonnées des structures et des ressources qui leur sont destinées.";"";"annual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:09.262000";"2026-01-16T00:00:10.817000";"";False;7;0;"xml,xlsx,csv,geojson,ods,zip,json";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;1;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";4742;1475
+"5fa5e389aafc7b48e11d25e7";"Idéo-Organismes d'information et d'orientation (Enseignement secondaire et supérieur)";"ideo-organismes-dinformation-et-dorientation-enseignement-secondaire-et-superieur";"";"https://www.data.gouv.fr/datasets/ideo-organismes-dinformation-et-dorientation-enseignement-secondaire-et-superieur";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Ce sont essentiellement les **CIO** (centres d'information et d'orientation) et les **SCUIO** (services communs universitaires d'information et d'orientation) dont il est question ici, sous forme de **répertoire.**
+**Champs du jeu de données :** type d’organisme ; n° Siret ; nom de l’organisme ; sigle de l’organisme ; boîte postale ; adresse postale ; code postal ; commune ; identifiant commune; mention cedex; n° de téléphone ; n° d’arrondissement ; département, académie, région, identifiant région; coordonnées géographiques pour la géolocalisation (longitude et latitude) ; lien vers le site [onisep.fr](http://www.onisep.fr/).";"";"annual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:09.091000";"2026-01-16T00:00:10.429000";"";False;7;0;"xml,xlsx,csv,geojson,ods,zip,json";"";"";"";"";"";"0.78";1;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";7229;1839
+"5fa5e388aafc7b48e11d25e6";"Idéo-Actions de dispositif-La Réunion";"ideo-actions-de-dispositif-la-reunion";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-la-reunion";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région La Réunion** sous un **format XML Lhéo, version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:08.951000";"2026-01-16T00:00:10.285000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";1955;245
+"5fa5e38897c665486bcbdd7b";"Idéo-Actions de dispositif-Pays de la Loire";"ideo-actions-de-dispositif-pays-de-la-loire";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-pays-de-la-loire";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Pays de la Loire** sous un **format XML Lhéo, version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:08.782000";"2026-01-16T00:00:10.359000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2155;294
+"5fa5e3886048295732f2e8ea";"Idéo-Actions de formation-Martinique";"ideo-actions-de-formation-martinique";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-martinique";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu** : les **actions de formation initiale** ainsi définies référencées par l’Onisep pour la **région Martinique** et proposées principalement **sous statut scolaire ou étudiant.**
+.
+ Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:08.546000";"2026-01-16T00:00:09.254000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2039;293
+"5fa5e38830098cc1f9f32937";"Idéo-Actions de formation-Normandie";"ideo-actions-de-formation-normandie";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-normandie";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu** : les **actions de formation initiale** ainsi définies référencées par l’Onisep pour la **région Normandie** et proposées principalement **sous statut scolaire ou étudiant.**
+.
+ Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:08.362000";"2026-01-16T00:00:09.089000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2401;308
+"5fa5e38897c665486bcbdd7a";"Idéo-Actions de formation-Pays de la Loire";"ideo-actions-de-formation-pays-de-la-loire";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-pays-de-la-loire";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu :** les actions de formation initiale ainsi définies référencées par l’Onisep pour la **région Pays de la Loire** et proposées principalement **sous statut scolaire ou étudiant.**
+.
+Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+ **Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"Pays de la Loire";False;"2020-11-07T01:00:08.128000";"2026-01-16T00:00:08.946000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2119;308
+"5fa5e38730098cc1f9f32936";"Idéo-Actions de dispositif-Hauts-de-France";"ideo-actions-de-dispositif-hauts-de-france";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-hauts-de-france";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Hauts de France** sous un **format XML Lhéo, version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"Hauts-de-France";False;"2020-11-07T01:00:07.925000";"2026-01-16T00:00:10.201000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2556;310
+"5fa5e38778ad06b169de1e1c";"Idéo-Actions de dispositif-Guyane";"ideo-actions-de-dispositif-guyane";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-guyane";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Guyane** sous un **format XML Lhéo, version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+ **Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:07.754000";"2026-01-16T00:00:10.064000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2000;274
+"5fa5e3877fce339d438b652d";"Idéo-Actions de dispositif-Grand Est";"ideo-actions-de-dispositif-grand-est";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-grand-est";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « A**ction de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Grand Est** sous un **format XML Lhéo, version 2.3.**
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:07.595000";"2026-01-16T00:00:09.905000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2196;280
+"5fa5e387b495d7805496cc3d";"Idéo-Actions de dispositif-Bretagne";"ideo-actions-de-dispositif-bretagne";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-bretagne";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Bretagne** sous un **format XML Lhéo, version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:07.435000";"2026-01-16T00:00:09.575000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2687;321
+"5fa5e38797c665486bcbdd79";"Idéo-Actions de dispositif-Bourgogne-Franche-Comté";"ideo-actions-de-dispositif-bourgogne-franche-comte";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-bourgogne-franche-comte";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Bourgogne-Franche-Comté** sous un **format XML Lhéo,** **version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+Périmètre de ce jeu : typologie non-exhaustive des AD mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:07.145000";"2026-01-16T00:00:09.444000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2180;302
+"5fa5e38790b38f273ac08add";"Idéo-Nomenclature ONISEP domaines et sous domaines";"ideo-nomenclature-onisep-domaines-et-sous-domaines";"";"https://www.data.gouv.fr/datasets/ideo-nomenclature-onisep-domaines-et-sous-domaines";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"**<span style=""mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"">>>> Avertissement du 17/04/2023 : des modifications pour harmonisation ont été apportées sur les ponctuations dans les libellés de 9 domaines et 14 sous-domaines de cette nomenclature. Plus d’information dans notre Actualité : </span>**[**<span style=""mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"">http://opendata.onisep.fr/actualite/35/8-nomenclature-onisep-domaines-sous-domaines-en-open-data.htm</span>**](http://opendata.onisep.fr/actualite/35/8-nomenclature-onisep-domaines-sous-domaines-en-open-data.htm)**<span style=""mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;""> <<<</span>**
+Ce jeu de données présente la **nomenclature Onisep des 20 domaines et 132 sous-domaines** utilisée pour :
+- relier entre elles et qualifier, dans ses systèmes d’information, les grandes voies d’orientation possibles, l’offre de formations, les métiers et les reconnaissances professionnelles…
+- définir des arborescences et des périmètres d’affichage sur ses sites web et applications numériques, et faciliter les recherches thématiques et le parcours des utilisateurs et utilisatrices. Par exemple sur le site [Onisep.fr](http://www.onisep.fr/) : le moteur de recherche de formations propose un filtre « domaine de formation » basé sur cette nomenclature et sur les indexations associées.
+.
+Lien de cette nomenclature avec les métiers référencés par l’Onisep : voir le jeu [ONISEP - IDÉO-MÉTIERS ONISEP (LICENCE ODBL)](http://opendata.onisep.fr/data/5fa5949243f97/2-ideo-metiers-onisep.htm)
+.
+Lien de cette nomenclature avec les formations initiales référencées par l’Onisep : voir le jeu [ONISEP - IDÉO-FORMATIONS INITIALES EN FRANCE (LICENCE ODBL)](http://opendata.onisep.fr/data/5fa591127f501/2-ideo-formations-initiales-en-france.htm)
+**.**
+**Champ du jeu de données :** Libellé du domaine, Libellé du sous-domaine
+.
+**Actualisation** : mises à jour en fonction des évolutions de cette nomenclature.
+**.**
+**Pour quels usages ?**
+- faciliter les recherches sur les sites et applications Onisep,
+- relier d’autres sites et applications dédiés à l’orientation à des ressources Onisep.";"";"";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:06.989000";"2026-01-16T00:00:07.681000";"";False;5;0;"xml,xlsx,csv,ods,json";"";"";"";"";"";"0.56";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;1;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";4335;837
+"5fa5e386afdaa6152360f323";"Idéo-Structures d'enseignement supérieur";"ideo-structures-denseignement-superieur";"";"https://www.data.gouv.fr/datasets/ideo-structures-denseignement-superieur";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"_>>> Avertissement du 16/09/2025 : la colonne ""label génération 2024"" a été supprimée. Pour des données officielles sur ce label, consulter : <https://www.enseignementsup-recherche.gouv.fr/fr/generation2024> et <https://data.education.gouv.fr/explore/dataset/fr-en-etablissements-labellises-generation-2024> <<<_
+**Périmètre du jeu :** Ce jeu est un **répertoire des établissements** référencés par L'Onisep **qui proposent un enseignement supérieur.**
+Les types d'établissements présents dans ce jeu de données sont les UFR (Unités de formation et de recherche), les IUT (Instituts universitaires de technologie), les écoles d'ingénieurs et de commerce, les écoles d'art et d'autres types d'établissements d'enseignement supérieur.
+**Champs de ce jeu :**
+- code UAI (unité administrative immatriculée),
+- n° SIRET,
+- type d'établissement,
+- nom,
+- sigle,
+- statut (public, privé...),
+- tutelle (ministères, chambres consulaires...),
+- université de rattachement (libellé et lien d'accès direct vers la fiche onisep.fr avec identifiant unique Onisep)
+- établissements liés (libellés et liens d'accès directs vers la fiche onisep.fr avec identifiants uniques Onisep)
+- coordonnées géographiques (boîte postale, adresse postale, code postal, commune, identifiant commune, mention cedex, n° de téléphone, arrondissement, département, académie, région, identifiant région, longitude X, latitude Y),
+- journées portes ouvertes,
+- lien d'accès direct vers la fiche onisep.fr et identifiant unique Onisep
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:06.822000";"2026-01-16T00:00:08.222000";"";False;7;0;"xml,xlsx,csv,geojson,ods,zip,json";"";"";"";"";"";"0.78";4;0;1;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;3;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 1, '2025-04': 1, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";7391;2873
+"5fa5e386632df2a77eb95c1f";"Idéo-Maisons départementales de personnes handicapées (MDPH)";"ideo-maisons-departementales-de-personnes-handicapees-mdph";"";"https://www.data.gouv.fr/datasets/ideo-maisons-departementales-de-personnes-handicapees-mdph";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Les **MDPH (maisons départementales des personnes handicapées)** reçoivent toutes les demandes de droits et de prestations. Elles construisent, avec la personne handicapée et sa famille, le projet de PPC (plan personnalisé de compensation) sur la base de son projet de vie. Les MDPH veillent à l'application des décisions prises par la CDAPH (Commission des droits et de l’autonomie des personnes handicapées), notamment celles concernant l'accueil dans les établissements.
+Pour plus d'information, consulter aussi la [rubrique ""Inclusion et handicap"" du site onisep.fr.](https://www.onisep.fr/inclusion-et-handicap)
+**Champs du jeu de données :** nom, adresse, code postal, commune, identifiant commune, département, région, identifiant région, coordonnées géographiques pour la géolocalisation (longitude et latitude), URL et ID Onisep.
+**Pour quels usages ?** Faciliter l’insertion des jeunes en situation de handicap grâce à la diffusion de l’offre de formation et d’accompagnement, ainsi que des coordonnées des structures et des ressources qui leur sont destinées.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:06.654000";"2026-01-16T00:00:07.839000";"";False;7;0;"xml,xlsx,csv,geojson,ods,zip,json";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";5954;1811
+"5fa5e386632df2a77eb95c1e";"Idéo-Actions de formation-Provence-Alpes-Côte d'Azur";"ideo-actions-de-formation-provence-alpes-cote-dazur";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-provence-alpes-cote-dazur";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu** : les **actions de formation initiale** ainsi définies référencées par l’Onisep pour la **région Provence-Alpes-Côte d'Azur** et proposées principalement **sous statut scolaire ou étudiant.**
+.
+Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+ **Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"Provence-Alpes-Côte d'Azur";False;"2020-11-07T01:00:06.413000";"2026-01-16T00:00:06.304000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2485;327
+"5fa5e386632df2a77eb95c1d";"Idéo-Actions de dispositif-Ile-de-France";"ideo-actions-de-dispositif-ile-de-france";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-ile-de-france";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Ile-de-France** sous un **format XML Lhéo, version 2.3**.
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"Île-de-France";False;"2020-11-07T01:00:06.189000";"2026-01-16T00:00:07.332000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2550;329
+"5fa5e386632df2a77eb95c1c";"Idéo-Actions de dispositif-Provence-Alpes-Côte d'Azur";"ideo-actions-de-dispositif-provence-alpes-cote-dazur";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-provence-alpes-cote-dazur";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Provence-Alpes-Côte d'Azur** sous un **format XML Lhéo, version 2.3.**
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:05.996000";"2026-01-16T00:00:07.527000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";1792;251
+"5fa5e38504fbbb79194a6ce4";"Idéo-Actions de formation-Corse";"ideo-actions-de-formation-corse";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-corse";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu :** les actions de formation initiale ainsi définies référencées par l’Onisep pour la **région Corse** et proposées principalement **sous statut scolaire ou étudiant.**
+ Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:05.822000";"2026-01-16T00:00:06.960000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2330;296
+"5fa5e3857fd4cb306f25da23";"Idéo-Actions de formation-Guadeloupe";"ideo-actions-de-formation-guadeloupe";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-guadeloupe";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu** : les **actions de formation initiale** ainsi définies référencées par l’Onisep pour la **région Guadeloupe** et proposées principalement **sous statut scolaire ou étudiant.**
+ Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:05.677000";"2026-01-16T00:00:06.566000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2281;92
+"5fa5e3855de3b2dab37d152e";"Idéo-Actions de formation-La Réunion";"ideo-actions-de-formation-la-reunion";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-la-reunion";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu** : les **actions de formation initiale** ainsi définies référencées par l’Onisep pour la **région La Réunion** et proposées principalement **sous statut scolaire ou étudiant.**
+ **.**
+Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+ .
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:05.577000";"2026-01-16T00:00:06.424000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2604;338
+"5fa5e3852409731280a1a721";"Idéo-Centres ressources handicap";"ideo-centres-ressources-handicap";"";"https://www.data.gouv.fr/datasets/ideo-centres-ressources-handicap";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Afin d’aider les **personnes en situation de handicap**, leurs familles et les professionnels qui les accompagnent, des **centres ressources** et des centres référents leur apportent informations, conseils et les soutiennent dans leurs démarches.
+Pour plus d'information, consulter aussi la [rubrique ""Inclusion et handicap"" du site onisep.fr.](https://www.onisep.fr/inclusion-et-handicap)
+**Champs du jeu de données :** nom, type(s) de handicap(s) indicatif(s), adresse, code postal, commune, identifiant commune, département, région, identifiant région, coordonnées géographiques pour la géolocalisation (longitude et latitude), URL et ID Onisep.
+**Pour quels usages ?** Faciliter l’insertion des jeunes en situation de handicap grâce à la diffusion de l’offre de formation et d’accompagnement, ainsi que des coordonnées des structures et des ressources qui leur sont destinées.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:05.448000";"2026-01-16T00:00:05.646000";"";False;7;0;"xml,xlsx,csv,geojson,ods,zip,json";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";4072;1097
+"5fa5e385aafc7b48e11d25e5";"Idéo-Actions de formation-Nouvelle-Aquitaine";"ideo-actions-de-formation-nouvelle-aquitaine";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-nouvelle-aquitaine";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu :** les **actions de formation initiale** ainsi définies référencées par l’Onisep pour la **région Nouvelle Aquitaine** et proposées principalement **sous statut scolaire ou étudiant.**
+.
+ Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des éléments d’extension non-obligatoires ou balises <extra> particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"Nouvelle-Aquitaine";False;"2020-11-07T01:00:05.088000";"2026-01-16T00:00:04.367000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";3502;374
+"5fa5e3844850f1f79c164268";"Idéo-Actions de dispositif-Nouvelle-Aquitaine";"ideo-actions-de-dispositif-nouvelle-aquitaine";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-nouvelle-aquitaine";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Nouvelle Aquitaine** sous un **format XML Lhéo, version 2.3.**
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:04.979000";"2026-01-16T00:00:05.407000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";1744;276
+"5fa5e38497c665486bcbdd78";"Idéo-Actions de formation-Grand Est";"ideo-actions-de-formation-grand-est";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-grand-est";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu** : les actions de formation initiale ainsi définies référencées par l’Onisep pour la **région Grand Est** et proposées principalement **sous statut scolaire ou étudiant**.
+ Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:04.796000";"2026-01-16T00:00:04.687000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";1979;271
+"5fa5e38497c665486bcbdd77";"Idéo-Actions de dispositif-Collectivités d'outre-mer";"ideo-actions-de-dispositif-collectivites-doutre-mer";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-collectivites-doutre-mer";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans les **Collectivités d'Outremer** sous un **format XML Lhéo, version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+ **Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:04.582000";"2026-01-16T00:00:05.243000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";1967;301
+"5fa5e38404fbbb79194a6ce3";"Idéo-Actions de dispositif-Auvergne-Rhône-Alpes";"ideo-actions-de-dispositif-auvergne-rhone-alpes";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-auvergne-rhone-alpes";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Auvergne-Rhône-Alpes** sous un **format XML Lhéo, version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu :** **typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+ **Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:04.369000";"2026-01-16T00:00:04.819000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2382;299
+"5fa5e3841743b699f18139f2";"Idéo-Actions de dispositif-Mayotte";"ideo-actions-de-dispositif-mayotte";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-mayotte";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « A**ction de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Mayotte** sous un **format XML Lhéo, version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+> 
+> \---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:04.190000";"2026-01-16T00:00:02.955000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2852;334
+"5fa5e383b4e729a69c1a55d9";"Idéo-Etablissements et services médico-sociaux (ESMS)";"ideo-etablissements-et-services-medico-sociaux-esms";"";"https://www.data.gouv.fr/datasets/ideo-etablissements-et-services-medico-sociaux-esms";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Les **établissements et services du secteur médico-social (ESMS)** accueillent les élèves handicapés dans le cadre du PPS (projet personnalisé de scolarisation). Selon le handicap pris en charge, les appellations des établissements et services diffèrent.
+Pour plus d'information, consulter aussi la [rubrique ""Inclusion et handicap"" du site onisep.fr.](https://www.onisep.fr/inclusion-et-handicap)
+**Champs du jeu de données :** typologie (établissement ou service), spécialité (ex: institut médico-éducatif (IME), institut d'éducation sensorielle, service d’éducation spéciale et de soins à domicile (SESSAD)... ), code Finess (fichier national des établissements sanitaires et sociaux), nom de l’établissement, type de handicap principal, adresse postale, code postal, commune, département, région, identifiant région, coordonnées géographiques pour la géolocalisation (longitude et latitude), URL et ID Onisep
+Les collectes et vérifications systématiques d'information sur ce périmètre ont lieu environ tous les 3 ans. Des mises à jour ponctuelles de ce jeu peuvent être réalisées entre ces collectes, pour refléter des mises à jour plus limitées dans Idéo (ex : coordonnées des établissements).
+ **Pour quels usages ?** Faciliter l’insertion des jeunes en situation de handicap grâce à la diffusion de l’offre de formation et d’accompagnement, ainsi que des coordonnées des structures et des ressources qui leur sont destinées.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:03.967000";"2026-01-16T00:00:04.273000";"";False;7;0;"xml,xlsx,csv,geojson,ods,zip,json";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";9947;2301
+"5fa5e3836048295732f2e8e9";"Idéo-Associations de personnes handicapées";"ideo-associations-de-personnes-handicapees";"";"https://www.data.gouv.fr/datasets/ideo-associations-de-personnes-handicapees";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Les **associations de personnes handicapées** conseillent, informent les jeunes et leurs familles en fonction du type de handicap (auditif, visuel, moteur, mental, troubles des apprentissages…). Elles leur apportent un soutien (formations pour les parents, échanges de bonnes pratiques, aide à la recherche d'emploi, information sur la recherche scientifique…).
+Pour plus d'information, consulter aussi la [rubrique ""Inclusion et handicap"" du site onisep.fr.](https://www.onisep.fr/inclusion-et-handicap)
+**Champs du jeu de données :** nom de l’association, adresse, code postal, commune, identifiant commune, département, région, identifiant région, coordonnées géographiques pour la géolocalisation (longitude et latitude), type(s) de handicap(s) indicatif(s), URL et identifiant Onisep.
+**Pour quels usages ?** Faciliter l’insertion des jeunes en situation de handicap grâce à la diffusion de l’offre de formation et de l'offre d’accompagnement, ainsi que des coordonnées des structures et des ressources qui leur sont destinées.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:03.759000";"2026-01-16T00:00:03.120000";"";False;7;0;"xml,xlsx,csv,geojson,ods,zip,json";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;1;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";6390;1617
+"5fa5e3831743b699f18139f1";"Idéo-Actions de dispositif-Guadeloupe";"ideo-actions-de-dispositif-guadeloupe";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-guadeloupe";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Guadeloupe** sous un **format XML Lhéo, version 2.3.**
+.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive des AD** mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:03.569000";"2026-01-16T00:00:02.738000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2162;313
+"5fa5e3836048295732f2e8e8";"Idéo-Actions de dispositif-Corse";"ideo-actions-de-dispositif-corse";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-dispositif-corse";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"Une « **Action de dispositif** » (AD) au sens Onisep est une action éducative mise en œuvre dans un établissement scolaire pour un public déterminé, qu’il s’agisse d’une action d’« inclusion » favorisant l’égalité des chances ou d’une action d’« adaptation » proposée sur une classe ou une section, et permettant d’aménager une formation à des orientations particulières (par exemple : CHA (classe à horaires aménagés) pour la musique, sections linguistiques ou sportives…).
+ .
+Ce jeu de données décrit les **actions de dispositif** accessibles dans la **région Corse** sous un **format XML Lhéo, version 2.3.**
+**.**
+Le format ou langage XML Lhéo normé et documenté sur un site dédié ([http://lheo.gouv.fr](http://lheo.gouv.fr/)) facilite les échanges et les flux de données entre les organisations traitant les questions de description de formation et d’orientation.
+.
+**Périmètre de ce jeu : typologie non-exhaustive** des AD mises en œuvre : :
+- dispositifs en collège/lycée : unités pédagogiques pour élèves allophones arrivants, classes pour enfants de familles itinérantes, dispositif relais,
+- dispositifs d’inclusion/adaptation : Segpa (sections d'enseignement général et professionnel adapté) , Ulis(unités localisées pour l'inclusion scolaire),
+- CHA (classes à horaires aménagés),
+- classes de 3e prépa-métiers,
+- sections/pôles sportifs,
+- sections linguistiques…
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo, et pour mieux répondre aux besoins exprimés par ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation, l’Onisep ajoute aussi des **éléments d’extension ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AD :
+> <extras info=""ETAB ONISEP"" uri=""content://f2f3d437-3fdd-44a3-bd74-792ae7a34c75"" horodatage-creation=""2020-06-06T02:15:40.829Z"" horodatage-modification=""2020-06-06T14:32:03.263Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.1054</extra>
+> 
+> <extra info=""STATUT"">privé sous contrat</extra>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">Collège</extra>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une AD :
+> <extras info=""ACTION ONISEP"" uri=""content://30336440-b80d-44d4-a0df-c2cb69575777"" horodatage-creation=""2020-06-06T06:42:26.673Z"" horodatage-modification=""2020-10-13T12:35:29.473Z"">
+> 
+> <extra info=""HOMOLO"">non inscrit au RNCP</extra>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU""></span>
+> 
+> <span lang=""EN-US""><extra info=""NIVEAU\_ID"">REF.414</extra></span>
+> 
+> <extra info=""NIVEAU\_LIBELLE"">sans diplôme</extra>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""><extra info=""ACT\_ID ONISEP"">AD.22999</extra></span>
+> 
+> </extras>
+\---
+Exemple d’élément d’extension Onisep portant sur une formation liée à une AD :
+> <extras info=""FORMATION ONISEP"" uri=""content://f643ccd2-3cc7-47db-bd38-92e606058156"" horodatage-creation=""2020-06-06T05:59:30.923Z"" horodatage-modification=""2022-07-21T07:56:11.448Z"">
+> 
+>  <extras info=""TYPE FORMATION"">
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPDISP.12</extra></span>
+> 
+> <span lang=""EN-US""> </span><extra info=""TYPE\_FORMATION\_LIBELLE"">section d'enseignement général et professionnel adapté</extra>
+> 
+>  <span lang=""EN-US""></extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">TYPDISP.12</extra></span>
+> 
+> </extras>
+\---
+**Mises à jour :** ce jeu sera mis à jour environ **10 fois/an** au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:03.367000";"2026-01-16T00:00:02.592000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2218;316
+"5fa5e3836048295732f2e8e7";"Idéo-Actions de formation-Guyane";"ideo-actions-de-formation-guyane";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-guyane";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu :** les **actions de formation initiale** ainsi définies référencées par l’Onisep pour la **région Guyane** et proposées principalement **sous statut scolaire ou étudiant.**
+ Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:03.163000";"2026-01-16T00:00:02.428000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";3647;358
+"5fa5e38271a265e248e66496";"Idéo-Actions de formation-Collectivités d’outre-mer";"ideo-actions-de-formation-collectivites-doutre-mer";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-collectivites-doutre-mer";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu :** les **actions de formation initiale** ainsi définies référencées par l’Onisep pour les **Collectivités d'Outremer** et proposées principalement **sous statut scolaire ou étudiant.**
+ Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:02.971000";"2026-01-16T00:00:02.264000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2287;305
+"5fa5e3821743b699f18139f0";"Idéo-Actions de formation-Bourgogne-Franche-Comté";"ideo-actions-de-formation-bourgogne-franche-comte";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-bourgogne-franche-comte";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu** : les actions de formation initiale ainsi définies référencées par l’Onisep pour la **région Bourgogne-Franche-Comté** et proposées principalement sous statut scolaire ou étudiant.
+ Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+.
+Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">dynamiques sociales et territoires</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83190</extra></span>
+> 
+> <span lang=""EN-US""></extra></span>
+> 
+> <span lang=""EN-US""> <extra info=""PARCOURS ACTION ONISEP"" uri=""content://d6422b8d-966c-49e0-8daa-627b78a8ebad"" horodatage-creation=""2020-06-06T19:47:12.707Z"" horodatage-modification=""2020-06-06T19:47:12.747Z""></span>
+> 
+> <extra info=""LIBELLE PARCOURS ACTION ONISEP"">métiers de la sociologie, recherche et étude</extra>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 1</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""SITUATION PARCOURS ACTION ONISEP"">master 2</extra></span>
+> 
+> <span lang=""EN-US""><extra info=""PARCOURS\_ID ACTION ONISEP"">ELTENS.83191</extra></span>
+> 
+> </extra>
+> 
+>  </extras>
+\---
+**Mises à jour :** Ce jeu sera mis à jour environ **dix fois par an**, au rythme du calendrier de l’orientation et des mises à jour du site Onisep.fr.";"";"punctual";"Open Data Commons Open Database License (ODbL)";"";"";"poi";"";False;"2020-11-07T01:00:02.822000";"2026-01-16T00:00:02.117000";"";False;1;0;"zip";"";"";"";"";"";"0.78";0;0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";0;0;"{'2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0, '2025-08': 0}";2488;297
+"5fa5e3821743b699f18139ef";"Idéo-Actions de formation-Hauts-de-France";"ideo-actions-de-formation-hauts-de-france";"";"https://www.data.gouv.fr/datasets/ideo-actions-de-formation-hauts-de-france";"Office national d'information sur les enseignements et les professions";"534fff9ba3a7292c64a78031";"";"";"La **formation générale ou professionnelle initiale** demeure le périmètre de l’Onisep, à destination des jeunes en phase de première orientation, à différentes étapes de leurs cursus scolaire. (fin de classe de 3e ou de classe de Terminale).
+.
+Une « **Action de formation** » (AF) au sens Onisep est la mise en œuvre d’une formation dans un établissement enregistré et localisé. Cette notion rejoint souvent l’expression « Offre de formation » parfois utilisée par d’autres organismes.
+.
+**Périmètre de ce jeu :** les **actions de formation initiale** ainsi définies référencées par l’Onisep pour la **région Hauts de France** et proposées principalement **sous statut scolaire ou étudiant.**
+ .
+Attention, depuis septembre 2022, **ce jeu de données ne comprend plus les actions de formation proposées en apprentissage** (cf. <https://opendata.onisep.fr/actualite/53/8-apprentissage-les-jeux-open-data-onisep-evoluent.htm>) ni l’éventuelle modalité apprentissage des actions de formation proposées sous d’autres formes. Pour en savoir plus sur la collecte de l'offre de formation en apprentissage, consulter : <https://catalogue-apprentissage.intercariforef.org/>
+ .
+ Ces actions de formation initiale sont décrites sous un **format XML Lhéo, version 2.3**.
+ .
+ Le format ou langage XML Lhéo normé et documenté sur un site dédié (<http://lheo.gouv.fr>) facilite les échanges et les flux de données entre les organisations traitant des questions de description de formation et d’orientation.
+.
+En dehors des 2 principaux cercles d’information normatifs du langage Lhéo (<http://lheo.gouv.fr/description>), et pour mieux répondre aux besoins de ses parties prenantes et partenaires prioritaires sur les questions et besoins de primo-orientation ou de flux de données, l’Onisep ajoute aussi des **éléments d’extension non-obligatoires ou balises <extra>** particulières renseignées par des données extraites de ses systèmes d’information.
+\---
+Exemple d’élément d’extension Onisep portant sur une structure liée à une AF :
+> <extras info=""ETAB ONISEP"" uri=""content://e70c51ad-77ee-46e5-8600-f54e4c02daca"" horodatage-creation=""2020-06-06T02:31:06.460Z"" horodatage-modification=""2022-07-08T09:12:32.917Z"">
+> 
+> <extra info=""ETA\_ID LIEU ONISEP"">ENS.5629</extra>
+> 
+> <span lang=""EN-US""><extra info=""STATUT"">public</extra></span>
+> 
+> <extra info=""TYPE\_ETABLISSEMENT"">lycée GT</extra>
+> 
+> </extras>
+\---
+ Exemple d’élément d’extension Onisep portant sur une formation liée à une AF :
+> <extras info=""FORMATION ONISEP"" uri=""content://8aa99ac1-87d3-422e-9aec-3219ac081696"" horodatage-creation=""2020-06-06T07:58:46.684Z"" horodatage-modification=""2022-07-20T11:27:12.025Z"">
+> 
+> <extras info=""TYPE FORMATION"">
+> 
+> <extra info=""TYPE\_FORMATION\_LIBELLE"">brevet de technicien supérieur</extra>
+> 
+>  <span lang=""EN-US""><extra info=""TYPE\_FORMATION\_ID"">TYPFOR.19</extra></span>
+> 
+> <span lang=""EN-US""> </extras></span>
+> 
+> <span lang=""EN-US""> <extra info=""FOR\_ID ONISEP"">FOR.5987</extra></span>
+> 
+> <span lang=""EN-US""> </span></extras>
+\---
+Exemple d’élément d’extension Onisep portant sur des parcours liés à une AF :
+> <extras info=""PARCOURS ACTION ONISEP"">
+> 
+>  <extra info=""PARCOURS ACTION ONISEP"" uri=""content://682e1c9d-4a9e-4938-960a-23c233a7dd14"" horodatage-creation=""2020-06-06T19:47:12.598Z"" horodatage-modification=""2020-06-06T19:47:12.652Z"">
+> 
