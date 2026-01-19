@@ -1,0 +1,55 @@
+================================================================================
+i-Lab Laureates Dataset Analysis
+Generated: 2026-01-19 17:22:26
+================================================================================
+
+Total Records: 3923
+
+Fields in Dataset:
+  - ﻿Dossier Aide
+  - Genre
+  - Moto
+  - Résumé
+  - Grand-Prix
+  - Identifiant
+  - Année de concours
+  - Type de candidature
+  - Domaine technologique
+  - Id région
+  - Région
+  - Nom du lauréat
+  - Prénom du candidat
+  - Idref
+  - Projet
+  - Email
+  - Déjà lauréat en
+  - Jury
+  - N° SIRET
+  - N° SIREN
+  - Libellé entreprise
+  - Site web entreprise
+  - Lienc vers scanR
+  - Id de l'unité de recherche liée au projet
+  - Unité de recherche liée au projet
+  - Sigle de l'unité de recherche liée au projet
+  - Id de la structure liée au projet
+  - Structure liée au projet
+
+Top Categories/Domains (Top 20):
+  Services informatiques et autres: 621
+  Électronique, Signal & Télécommunications: 530
+  Biotechnologies et pharmacie: 445
+  Pharmacie, Sciences du vivant & Biotechnologies: 279
+  Informatique, logiciel & TIC: 249
+  Pharmacie & biotechnologies: 242
+  Numérique, technologies logicielles & communication: 236
+  Génie des procédés: 235
+  Chimie et matériaux: 233
+  Mécanique & Travail des métaux: 204
+  Technologies médicales: 199
+  Électronique, traitement du signal & instrumentation: 138
+  Matériaux, mécanique & procédés industriels: 124
+  Chimie & Sciences des matériaux: 90
+  Chimie & environnement: 81
+  Chimie & Environnement: 17
+

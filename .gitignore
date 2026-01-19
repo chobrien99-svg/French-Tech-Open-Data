@@ -18,6 +18,16 @@ build/
 # Processed data
 *.json
 *.parquet
+*.geojson
+*.dbf
+*.dbf.zip
+*.shp
+*.shx
+*.prj
+
+# Mac files
+__MACOSX/
+.DS_Store
 
 # IDE
 .vscode/
