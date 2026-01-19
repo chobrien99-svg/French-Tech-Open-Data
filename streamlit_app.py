@@ -78,10 +78,22 @@ def load_data():
         st.info(f"⬇️ Downloading data from GitHub (one-time, ~4MB)...")
         try:
             urllib.request.urlretrieve(url, csv_path)
-            st.success(f"✅ Downloaded successfully!")
+
+            # Verify download was successful
+            if not csv_path.exists():
+                raise FileNotFoundError("Download completed but file not found")
+
+            file_size = csv_path.stat().st_size
+            if file_size < min_file_size:
+                raise ValueError(f"Downloaded file too small: {file_size} bytes (expected > {min_file_size})")
+
+            st.success(f"✅ Downloaded successfully! ({file_size:,} bytes)")
         except Exception as e:
             st.error(f"❌ Download failed: {e}")
             st.error(f"Please check: {url}")
+            # Clean up failed download
+            if csv_path.exists():
+                csv_path.unlink()
             raise
 
     # Load the CSV
@@ -129,10 +141,22 @@ def load_geojson():
         st.info(f"⬇️ Downloading map data from GitHub (one-time, ~6MB)...")
         try:
             urllib.request.urlretrieve(url, geojson_path)
-            st.success(f"✅ Map data downloaded successfully!")
+
+            # Verify download was successful
+            if not geojson_path.exists():
+                raise FileNotFoundError("Download completed but file not found")
+
+            file_size = geojson_path.stat().st_size
+            if file_size < min_file_size:
+                raise ValueError(f"Downloaded file too small: {file_size} bytes (expected > {min_file_size})")
+
+            st.success(f"✅ Map data downloaded successfully! ({file_size:,} bytes)")
         except Exception as e:
             st.error(f"❌ Download failed: {e}")
             st.error(f"Please check: {url}")
+            # Clean up failed download
+            if geojson_path.exists():
+                geojson_path.unlink()
             raise
 
     # Load the GeoJSON
@@ -395,8 +419,14 @@ def main():
         # Extract coordinates
         map_data = []
         for feature in geojson_data.get('features', []):
-            props = feature.get('properties', {})
-            coords = feature.get('geometry', {}).get('coordinates', [])
+            # Skip None or invalid features
+            if not feature or not isinstance(feature, dict):
+                continue
+
+            # Safely access nested attributes
+            props = feature.get('properties') or {}
+            geometry = feature.get('geometry') or {}
+            coords = geometry.get('coordinates', [])
 
             if coords and len(coords) == 2:
                 map_data.append({
