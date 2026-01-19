@@ -395,8 +395,14 @@ def main():
         # Extract coordinates
         map_data = []
         for feature in geojson_data.get('features', []):
-            props = feature.get('properties', {})
-            coords = feature.get('geometry', {}).get('coordinates', [])
+            # Skip None or invalid features
+            if not feature or not isinstance(feature, dict):
+                continue
+
+            # Safely access nested attributes
+            props = feature.get('properties') or {}
+            geometry = feature.get('geometry') or {}
+            coords = geometry.get('coordinates', [])
 
             if coords and len(coords) == 2:
                 map_data.append({
