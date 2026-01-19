@@ -71,7 +71,7 @@ def load_data():
 
     # Download if file doesn't exist or is too small (corrupt/empty)
     min_file_size = 1000  # Expect at least 1KB for valid CSV
-    needs_download = not csv_path.exists() or csv_path.stat().st_size < min_file_size
+    needs_download = not csv_path.exists() or (csv_path.exists() and csv_path.stat().st_size < min_file_size)
 
     if needs_download:
         url = 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.csv'
@@ -106,9 +106,11 @@ def load_data():
             df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
         except Exception as e2:
             st.error(f"Failed to parse CSV: {e2}")
+            st.error(f"File size: {csv_path.stat().st_size if csv_path.exists() else 'N/A'} bytes")
             # Clean up invalid file so it will be re-downloaded next time
             if csv_path.exists():
                 csv_path.unlink()
+            st.cache_data.clear()  # Clear cache to force re-download
             raise
 
     # Validate we got data
@@ -134,7 +136,7 @@ def load_geojson():
 
     # Download if file doesn't exist or is too small (corrupt/empty)
     min_file_size = 1000  # Expect at least 1KB for valid GeoJSON
-    needs_download = not geojson_path.exists() or geojson_path.stat().st_size < min_file_size
+    needs_download = not geojson_path.exists() or (geojson_path.exists() and geojson_path.stat().st_size < min_file_size)
 
     if needs_download:
         url = 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.geojson'
