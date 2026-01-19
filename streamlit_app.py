@@ -58,54 +58,74 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 @st.cache_data
-def download_data_if_needed():
-    """Download data files from GitHub if they don't exist locally"""
+def load_data():
+    """Load CSV data - downloads from GitHub if not present"""
     import urllib.request
-    import os
 
+    # Define paths
     data_dir = Path(__file__).parent / "data" / "ilab"
+    csv_path = data_dir / "ilab_laureats.csv"
+
+    # Create directory if needed
     data_dir.mkdir(parents=True, exist_ok=True)
 
-    # Files to download from the separate data repository
-    files = {
-        'ilab_laureats.csv': 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.csv',
-        'ilab_laureats.geojson': 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.geojson'
-    }
+    # Download if file doesn't exist
+    if not csv_path.exists():
+        url = 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.csv'
+        st.info(f"⬇️ Downloading data from GitHub (one-time, ~4MB)...")
+        try:
+            urllib.request.urlretrieve(url, csv_path)
+            st.success(f"✅ Downloaded successfully!")
+        except Exception as e:
+            st.error(f"❌ Download failed: {e}")
+            st.error(f"Please check: {url}")
+            raise
 
-    for filename, url in files.items():
-        filepath = data_dir / filename
-        if not filepath.exists():
-            try:
-                st.info(f"Downloading {filename}...")
-                urllib.request.urlretrieve(url, filepath)
-                st.success(f"✓ Downloaded {filename}")
-            except Exception as e:
-                st.error(f"Failed to download {filename}: {e}")
-                raise
-
-@st.cache_data
-def load_data():
-    """Load CSV data"""
-    download_data_if_needed()
-    csv_path = Path(__file__).parent / "data" / "ilab" / "ilab_laureats.csv"
-
+    # Load the CSV
     try:
         # Try UTF-8 with BOM
         df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8-sig')
-    except:
-        # Fallback to regular UTF-8
-        df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
+    except Exception as e:
+        try:
+            # Fallback to regular UTF-8
+            df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
+        except Exception as e2:
+            st.error(f"Failed to parse CSV: {e2}")
+            raise
 
     return df
 
 @st.cache_data
 def load_geojson():
-    """Load GeoJSON data"""
-    download_data_if_needed()
-    geojson_path = Path(__file__).parent / "data" / "ilab" / "ilab_laureats.geojson"
+    """Load GeoJSON data - downloads from GitHub if not present"""
+    import urllib.request
 
-    with open(geojson_path, 'r', encoding='utf-8') as f:
-        return json.load(f)
+    # Define paths
+    data_dir = Path(__file__).parent / "data" / "ilab"
+    geojson_path = data_dir / "ilab_laureats.geojson"
+
+    # Create directory if needed
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    # Download if file doesn't exist
+    if not geojson_path.exists():
+        url = 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.geojson'
+        st.info(f"⬇️ Downloading map data from GitHub (one-time, ~6MB)...")
+        try:
+            urllib.request.urlretrieve(url, geojson_path)
+            st.success(f"✅ Map data downloaded successfully!")
+        except Exception as e:
+            st.error(f"❌ Download failed: {e}")
+            st.error(f"Please check: {url}")
+            raise
+
+    # Load the GeoJSON
+    try:
+        with open(geojson_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        st.error(f"Failed to parse GeoJSON: {e}")
+        raise
 
 def main():
     # Header
