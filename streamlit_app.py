@@ -58,8 +58,35 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 @st.cache_data
+def download_data_if_needed():
+    """Download data files from GitHub if they don't exist locally"""
+    import urllib.request
+    import os
+
+    data_dir = Path(__file__).parent / "data" / "ilab"
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    # Files to download from the separate data repository
+    files = {
+        'ilab_laureats.csv': 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.csv',
+        'ilab_laureats.geojson': 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.geojson'
+    }
+
+    for filename, url in files.items():
+        filepath = data_dir / filename
+        if not filepath.exists():
+            try:
+                st.info(f"Downloading {filename}...")
+                urllib.request.urlretrieve(url, filepath)
+                st.success(f"✓ Downloaded {filename}")
+            except Exception as e:
+                st.error(f"Failed to download {filename}: {e}")
+                raise
+
+@st.cache_data
 def load_data():
     """Load CSV data"""
+    download_data_if_needed()
     csv_path = Path(__file__).parent / "data" / "ilab" / "ilab_laureats.csv"
 
     try:
@@ -74,6 +101,7 @@ def load_data():
 @st.cache_data
 def load_geojson():
     """Load GeoJSON data"""
+    download_data_if_needed()
     geojson_path = Path(__file__).parent / "data" / "ilab" / "ilab_laureats.geojson"
 
     with open(geojson_path, 'r', encoding='utf-8') as f:
