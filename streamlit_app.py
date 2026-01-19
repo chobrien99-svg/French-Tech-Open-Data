@@ -408,8 +408,6 @@ def main():
     # Map visualization
     st.subheader("🌍 Geographic Distribution")
 
-    st.info("💡 Tip: The GeoJSON data contains precise coordinates for each laureate. This map shows the distribution across France.")
-
     # Try to create a simple map
     try:
         geojson_data = load_geojson()
@@ -441,35 +439,40 @@ def main():
 
         map_df = pd.DataFrame(map_data)
 
-        # Filter map data based on current filters
-        if not map_df.empty:
+        # Check if we have any valid coordinates
+        if map_df.empty:
+            st.warning("⚠️ The GeoJSON file was loaded but contains no valid geographic coordinates. Map visualization is unavailable.")
+            st.info("💡 This dataset appears to have regional information but no precise lat/lon coordinates.")
+        else:
+            # Filter map data based on current filters
             if selected_regions:
                 map_df = map_df[map_df['region'].isin(selected_regions)]
 
-            fig_map = px.scatter_mapbox(
-                map_df,
-                lat='lat',
-                lon='lon',
-                hover_name='project',
-                hover_data={'region': True, 'year': True, 'lat': False, 'lon': False},
-                color='region',
-                zoom=5,
-                height=600,
-                title=f'Geographic Distribution of {len(map_df):,} Laureates'
-            )
+            if not map_df.empty:
+                fig_map = px.scatter_mapbox(
+                    map_df,
+                    lat='lat',
+                    lon='lon',
+                    hover_name='project',
+                    hover_data={'region': True, 'year': True, 'lat': False, 'lon': False},
+                    color='region',
+                    zoom=5,
+                    height=600,
+                    title=f'Geographic Distribution of {len(map_df):,} Laureates'
+                )
 
-            fig_map.update_layout(
-                mapbox_style="open-street-map",
-                margin={"r":0,"t":40,"l":0,"b":0}
-            )
+                fig_map.update_layout(
+                    mapbox_style="open-street-map",
+                    margin={"r":0,"t":40,"l":0,"b":0}
+                )
 
-            st.plotly_chart(fig_map, use_container_width=True)
-        else:
-            st.warning("No geographic data available for the selected filters.")
+                st.plotly_chart(fig_map, use_container_width=True)
+            else:
+                st.warning("No geographic data available for the selected filters.")
 
     except Exception as e:
-        st.error(f"Error loading map: {e}")
-        st.info("Map visualization requires the GeoJSON file to be present.")
+        st.warning(f"⚠️ Map visualization unavailable: {str(e)}")
+        st.info("💡 The dashboard will continue to work without the map. All other visualizations are available above.")
 
     st.divider()
 
