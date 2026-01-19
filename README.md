@@ -6,24 +6,29 @@ This repository contains various French government open data projects, focusing 
 
 ### 1. i-Lab Laureates Dataset
 
-The i-Lab competition is a national program supporting the creation of innovative technology companies in France.
+The i-Lab competition is France's national program supporting the creation of innovative technology companies, awarding funding to startups since 1999.
 
-**Status**: Structure ready, awaiting data download
+**Status**: ✅ Complete - Data imported and analyzed
 
 **Location**: `data/ilab/`
 
+**Key Findings**:
+- 3,923 laureates over 27 years (1999-2025)
+- 125 Grand Prix winners
+- 25.5% concentrated in Île-de-France region
+- Top sectors: IT Services (15.8%), Electronics (13.5%), Biotech (11.3%)
+- Gender split: 88% Male, 12% Female
+
 **Quick Start**:
 ```bash
-# 1. Download the dataset from:
-# https://www.data.gouv.fr/datasets/laureats-i-lab-concours-national-daide-a-la-creation-dentreprises-de-technologies-innovantes-1
+# View comprehensive analysis
+cat data/ilab/ilab_comprehensive_report.txt
 
-# 2. Place the CSV file in data/ilab/
-
-# 3. Process the data:
-python3 scripts/process_ilab.py
+# Re-run analysis
+python3 scripts/analyze_ilab_detailed.py
 ```
 
-See [data/ilab/README.md](data/ilab/README.md) for more details.
+See [data/ilab/README.md](data/ilab/README.md) for full documentation and insights.
 
 ## Repository Structure
 

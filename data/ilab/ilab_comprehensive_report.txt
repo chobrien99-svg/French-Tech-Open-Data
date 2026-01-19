@@ -1,0 +1,115 @@
+====================================================================================================
+I-LAB LAUREATES - COMPREHENSIVE ANALYSIS REPORT
+Concours national d'aide à la création d'entreprises de technologies innovantes
+====================================================================================================
+
+Generated: 2026-01-19 17:23:19
+Total Records: 3,923
+
+EXECUTIVE SUMMARY
+----------------------------------------------------------------------------------------------------
+Competition Period: 1999 - 2025 (27 years)
+Grand Prix Winners: 125
+Repeat Laureates: 871
+Companies with SIRET: 636
+
+
+GENDER DISTRIBUTION
+----------------------------------------------------------------------------------------------------
+Homme               : 3,451 ( 88.0%)
+Femme               :   472 ( 12.0%)
+
+
+YEAR DISTRIBUTION
+----------------------------------------------------------------------------------------------------
+1999: ████████████████████████ 245
+2000: █████████████████████████████ 296
+2001: ███████████████████████ 238
+2002: ██████████████████████ 224
+2003: ███████████████████ 193
+2004: ██████████████████ 182
+2005: █████████████████ 178
+2006: ████████████████ 166
+2007: ███████████████ 158
+2008: █████████████████ 170
+2009: █████████████████ 171
+2010: █████████████████ 174
+2011: ██████████████ 149
+2012: ████████████████ 167
+2013: █████████████████ 175
+2014: █████████████████ 171
+2015: █████████████████ 174
+2016: █████ 56
+2017: ██████ 62
+2018: ██████ 64
+2019: ███████ 75
+2020: ███████ 73
+2021: ██████ 69
+2022: ███████ 78
+2023: ███████ 79
+2024: ███████ 74
+2025: ██████ 62
+
+
+REGIONAL DISTRIBUTION (Top 15)
+----------------------------------------------------------------------------------------------------
+ 1. Île-de-France                      : 1,000 ( 25.5%)
+ 2. Auvergne-Rhône-Alpes               :   582 ( 14.8%)
+ 3. Occitanie                          :   461 ( 11.8%)
+ 4. Nouvelle-Aquitaine                 :   290 (  7.4%)
+ 5. Grand Est                          :   280 (  7.1%)
+ 6. Provence-Alpes-Côte d'Azur         :   259 (  6.6%)
+ 7. Hauts-de-France                    :   240 (  6.1%)
+ 8. Bretagne                           :   186 (  4.7%)
+ 9. Pays de la Loire                   :   158 (  4.0%)
+10. Bourgogne-Franche-Comté            :   157 (  4.0%)
+11. Normandie                          :   106 (  2.7%)
+12. Centre-Val de Loire                :    75 (  1.9%)
+13. Corse                              :    35 (  0.9%)
+14. La Réunion                         :    34 (  0.9%)
+15. Nouvelle-Calédonie                 :    15 (  0.4%)
+
+
+TECHNOLOGY DOMAINS (Top 20)
+----------------------------------------------------------------------------------------------------
+ 1. Services informatiques et autres                            :   621 ( 15.8%)
+ 2. Électronique, Signal & Télécommunications                   :   530 ( 13.5%)
+ 3. Biotechnologies et pharmacie                                :   445 ( 11.3%)
+ 4. Pharmacie, Sciences du vivant & Biotechnologies             :   279 (  7.1%)
+ 5. Informatique, logiciel & TIC                                :   249 (  6.3%)
+ 6. Pharmacie & biotechnologies                                 :   242 (  6.2%)
+ 7. Numérique, technologies logicielles & communication         :   236 (  6.0%)
+ 8. Génie des procédés                                          :   235 (  6.0%)
+ 9. Chimie et matériaux                                         :   233 (  5.9%)
+10. Mécanique & Travail des métaux                              :   204 (  5.2%)
+11. Technologies médicales                                      :   199 (  5.1%)
+12. Électronique, traitement du signal & instrumentation        :   138 (  3.5%)
+13. Matériaux, mécanique & procédés industriels                 :   124 (  3.2%)
+14. Chimie & Sciences des matériaux                             :    90 (  2.3%)
+15. Chimie & environnement                                      :    81 (  2.1%)
+16. Chimie & Environnement                                      :    17 (  0.4%)
+
+
+CANDIDATURE TYPE
+----------------------------------------------------------------------------------------------------
+création-développement        : 2,042 ( 52.1%)
+en émergence                  : 1,881 ( 47.9%)
+
+
+JURY LEVEL
+----------------------------------------------------------------------------------------------------
+National            : 3,460 ( 90.7%)
+Régional            :   353 (  9.3%)
+
+
+TOP 5 REGIONS - RECENT ACTIVITY (Last 5 Years)
+----------------------------------------------------------------------------------------------------
+1. Île-de-France: 129 laureates
+2. Auvergne-Rhône-Alpes: 61 laureates
+3. Grand Est: 29 laureates
+4. Nouvelle-Aquitaine: 29 laureates
+5. Occitanie: 28 laureates
+
+====================================================================================================
+END OF REPORT
+====================================================================================================
