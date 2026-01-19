@@ -94,7 +94,17 @@ def load_data():
             df = pd.read_csv(csv_path, delimiter=';', encoding='utf-8')
         except Exception as e2:
             st.error(f"Failed to parse CSV: {e2}")
+            # Clean up invalid file so it will be re-downloaded next time
+            if csv_path.exists():
+                csv_path.unlink()
             raise
+
+    # Validate we got data
+    if df is None or df.empty:
+        st.error("CSV loaded but contains no data")
+        if csv_path.exists():
+            csv_path.unlink()
+        raise ValueError("CSV file is empty")
 
     return df
 
@@ -128,9 +138,18 @@ def load_geojson():
     # Load the GeoJSON
     try:
         with open(geojson_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            data = json.load(f)
+            # Validate it's a dictionary with features
+            if not isinstance(data, dict):
+                raise ValueError("GeoJSON is not a valid dictionary")
+            if 'features' not in data:
+                raise ValueError("GeoJSON missing 'features' key")
+            return data
     except Exception as e:
         st.error(f"Failed to parse GeoJSON: {e}")
+        # Clean up invalid file so it will be re-downloaded next time
+        if geojson_path.exists():
+            geojson_path.unlink()
         raise
 
 def main():
@@ -368,6 +387,10 @@ def main():
     # Try to create a simple map
     try:
         geojson_data = load_geojson()
+
+        # Validate geojson_data is not None
+        if geojson_data is None:
+            raise ValueError("GeoJSON data is None - file may be empty or invalid")
 
         # Extract coordinates
         map_data = []
