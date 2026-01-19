@@ -69,8 +69,11 @@ def load_data():
     # Create directory if needed
     data_dir.mkdir(parents=True, exist_ok=True)
 
-    # Download if file doesn't exist
-    if not csv_path.exists():
+    # Download if file doesn't exist or is too small (corrupt/empty)
+    min_file_size = 1000  # Expect at least 1KB for valid CSV
+    needs_download = not csv_path.exists() or csv_path.stat().st_size < min_file_size
+
+    if needs_download:
         url = 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.csv'
         st.info(f"⬇️ Downloading data from GitHub (one-time, ~4MB)...")
         try:
@@ -107,8 +110,11 @@ def load_geojson():
     # Create directory if needed
     data_dir.mkdir(parents=True, exist_ok=True)
 
-    # Download if file doesn't exist
-    if not geojson_path.exists():
+    # Download if file doesn't exist or is too small (corrupt/empty)
+    min_file_size = 1000  # Expect at least 1KB for valid GeoJSON
+    needs_download = not geojson_path.exists() or geojson_path.stat().st_size < min_file_size
+
+    if needs_download:
         url = 'https://raw.githubusercontent.com/chobrien99-svg/Laur-ats-I-LAB/main/fr-esr-laureats-concours-national-i-lab.geojson'
         st.info(f"⬇️ Downloading map data from GitHub (one-time, ~6MB)...")
         try:
