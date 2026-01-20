@@ -4,7 +4,26 @@ This repository contains various French government open data projects, focusing 
 
 ## Projects
 
-### 1. i-Lab Laureates Dataset
+### 1. FranceTerme Official Terminology Database
+
+**Status**: 🔄 Moved to dedicated repository
+
+FranceTerme is the official French government database providing French equivalents for technical and scientific terms across various fields.
+
+**New Location**: [franceterme-data](https://github.com/chobrien99-svg/franceterme-data)
+
+**Dataset Contains**:
+- 282 CSV export files with terminology data
+- French terms with official definitions
+- Foreign language equivalents (primarily English)
+- Domain classifications (IT, engineering, medicine, etc.)
+- Complete usage documentation
+
+The dataset has been moved to its own repository for better organization and accessibility.
+
+---
+
+### 2. i-Lab Laureates Dataset
 
 The i-Lab competition is France's national program supporting the creation of innovative technology companies, awarding funding to startups since 1999.
 
