@@ -122,6 +122,56 @@ def load_data():
 
     return df
 
+def get_region_coordinates():
+    """
+    Returns a dictionary mapping French region names to approximate center coordinates.
+    Includes both current regions (post-2016) and historical regions.
+    """
+    return {
+        # Current French regions (post-2016)
+        'Auvergne-Rhône-Alpes': (45.4471, 4.3852),
+        'Bourgogne-Franche-Comté': (47.2805, 4.9994),
+        'Bretagne': (48.2020, -2.9326),
+        'Centre-Val de Loire': (47.7516, 1.6751),
+        'Corse': (42.0396, 9.0129),
+        'Grand Est': (48.7000, 6.1878),
+        'Hauts-de-France': (50.4801, 2.7937),
+        'Île-de-France': (48.8499, 2.6370),
+        'Normandie': (49.1829, -0.3707),
+        'Nouvelle-Aquitaine': (45.7104, 0.6229),
+        'Occitanie': (43.8927, 3.2827),
+        'Pays de la Loire': (47.7633, -0.3299),
+        "Provence-Alpes-Côte d'Azur": (43.9352, 6.0679),
+
+        # Historical regions (pre-2016) - for backward compatibility
+        'Alsace': (48.3181, 7.4416),
+        'Aquitaine': (44.7000, -0.3400),
+        'Auvergne': (45.7772, 3.0870),
+        'Basse-Normandie': (49.0294, -0.3088),
+        'Bourgogne': (47.0500, 4.5000),
+        'Bretagne': (48.2020, -2.9326),
+        'Centre': (47.7516, 1.6751),
+        'Champagne-Ardenne': (48.9566, 4.3635),
+        'Franche-Comté': (47.2378, 6.0241),
+        'Haute-Normandie': (49.4404, 1.0939),
+        'Languedoc-Roussillon': (43.6108, 3.8767),
+        'Limousin': (45.8336, 1.2611),
+        'Lorraine': (48.6800, 6.2000),
+        'Midi-Pyrénées': (43.6045, 1.4442),
+        'Nord-Pas-de-Calais': (50.6292, 3.0573),
+        'Pays de la Loire': (47.7633, -0.3299),
+        'Picardie': (49.6642, 2.5281),
+        'Poitou-Charentes': (46.1667, -0.3333),
+        'Rhône-Alpes': (45.4471, 4.3852),
+
+        # Overseas territories
+        'Guadeloupe': (16.2650, -61.5510),
+        'Martinique': (14.6415, -61.0242),
+        'Guyane': (3.9339, -53.1258),
+        'La Réunion': (-21.1151, 55.5364),
+        'Mayotte': (-12.8275, 45.1662),
+    }
+
 @st.cache_data
 def load_geojson():
     """Load GeoJSON data - downloads from GitHub if not present"""
@@ -408,67 +458,72 @@ def main():
     # Map visualization
     st.subheader("🌍 Geographic Distribution")
 
-    # Try to create a simple map
+    # Try to create a simple map using region-based geocoding
     try:
-        geojson_data = load_geojson()
+        import numpy as np
 
-        # Validate geojson_data is not None
-        if geojson_data is None:
-            raise ValueError("GeoJSON data is None - file may be empty or invalid")
+        # Get region coordinates mapping
+        region_coords = get_region_coordinates()
 
-        # Extract coordinates
+        # Geocode based on region from CSV data
         map_data = []
-        for feature in geojson_data.get('features', []):
-            # Skip None or invalid features
-            if not feature or not isinstance(feature, dict):
-                continue
+        for idx, row in filtered_df.iterrows():
+            region = row.get(region_col)
+            if pd.notna(region) and region in region_coords:
+                lat, lon = region_coords[region]
 
-            # Safely access nested attributes
-            props = feature.get('properties') or {}
-            geometry = feature.get('geometry') or {}
-            coords = geometry.get('coordinates', [])
+                # Add small random jitter to spread points within region
+                # ~0.3 degrees ≈ 30km variation
+                lat_jitter = np.random.uniform(-0.3, 0.3)
+                lon_jitter = np.random.uniform(-0.3, 0.3)
 
-            if coords and len(coords) == 2:
                 map_data.append({
-                    'lon': coords[0],
-                    'lat': coords[1],
-                    'region': props.get('Région', 'Unknown'),
-                    'year': props.get('Année de concours', 'Unknown'),
-                    'project': props.get('Projet', 'Unknown')
+                    'lat': lat + lat_jitter,
+                    'lon': lon + lon_jitter,
+                    'region': region,
+                    'year': row.get(year_col, 'Unknown'),
+                    'project': row.get('Projet', 'Unknown'),
+                    'laureate': row.get('Nom du lauréat', 'Unknown'),
+                    'domain': row.get(domain_col, 'Unknown')
                 })
 
         map_df = pd.DataFrame(map_data)
 
         # Check if we have any valid coordinates
         if map_df.empty:
-            st.warning("⚠️ The GeoJSON file was loaded but contains no valid geographic coordinates. Map visualization is unavailable.")
-            st.info("💡 This dataset appears to have regional information but no precise lat/lon coordinates.")
+            st.warning("⚠️ No geographic coordinates available for the selected filters.")
+            st.info("💡 Try adjusting your filters to include more regions.")
         else:
-            # Filter map data based on current filters
-            if selected_regions:
-                map_df = map_df[map_df['region'].isin(selected_regions)]
+            # Determine zoom level based on data spread
+            zoom_level = 5 if len(map_df) > 100 else 6
 
-            if not map_df.empty:
-                fig_map = px.scatter_mapbox(
-                    map_df,
-                    lat='lat',
-                    lon='lon',
-                    hover_name='project',
-                    hover_data={'region': True, 'year': True, 'lat': False, 'lon': False},
-                    color='region',
-                    zoom=5,
-                    height=600,
-                    title=f'Geographic Distribution of {len(map_df):,} Laureates'
-                )
+            fig_map = px.scatter_mapbox(
+                map_df,
+                lat='lat',
+                lon='lon',
+                hover_name='laureate',
+                hover_data={
+                    'project': True,
+                    'region': True,
+                    'year': True,
+                    'domain': True,
+                    'lat': False,
+                    'lon': False
+                },
+                color='region',
+                zoom=zoom_level,
+                height=600,
+                title=f'Geographic Distribution of {len(map_df):,} Laureates'
+            )
 
-                fig_map.update_layout(
-                    mapbox_style="open-street-map",
-                    margin={"r":0,"t":40,"l":0,"b":0}
-                )
+            fig_map.update_layout(
+                mapbox_style="open-street-map",
+                margin={"r":0,"t":40,"l":0,"b":0}
+            )
 
-                st.plotly_chart(fig_map, use_container_width=True)
-            else:
-                st.warning("No geographic data available for the selected filters.")
+            st.plotly_chart(fig_map, use_container_width=True)
+
+            st.info("💡 Points are geocoded based on region centers with random variation. Each dot represents one laureate, positioned within their region.")
 
     except Exception as e:
         st.warning(f"⚠️ Map visualization unavailable: {str(e)}")
